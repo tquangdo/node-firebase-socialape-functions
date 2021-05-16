@@ -61,10 +61,13 @@ admin.initializeApp({
 #### f) log
 https://console.cloud.google.com/logs/ > choose project name
 ![log](log.png)
-#### ???) function: "login"
+#### g) function:
+![api_list](api_list.png)
+*********
+#### h) function:"login"
 1. Option 1:
 - `functions$firebase serve`
-- => access "http://localhost:5000/socialape-efcc4/us-central1/api/login"
+- => access "http://localhost:5000/socialape-efcc4/us-central1//login"
 - => get token for API's header
 2. Option 2:
 - `functions$firebase deploy --only functions`
