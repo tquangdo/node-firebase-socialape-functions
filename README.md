@@ -35,7 +35,7 @@
 ```
 #### c) emulators
 - `$firebase emulators:start`
-#### d) serve
+#### d) serve (localhost)
 `functions$firebase serve`
 1. create file "functions/serviceAccountKey.json":
 - FB's dashboard: tab "project settings" > service accounts > firebase admin sdk > click "generate new private key" > rename file to "serviceAccountKey.json"
@@ -48,7 +48,7 @@ admin.initializeApp({
     // databaseURL:  ****
 })
 ```
-#### e) deploy
+#### e) deploy (PROD domain)
 `functions$firebase deploy`
 * Note:
 1. NOT run concurrently with serve
