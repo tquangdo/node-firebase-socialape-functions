@@ -53,7 +53,7 @@ exports.signUp = (req, res) => {
         })
         .then(() => {
             //POST http://localhost:5000/socialape-efcc4/us-central1/api/signup lần 1
-            return res.status(201).json({ tokenVar, })
+            return res.status(201).json({ tokenVar, }) // return tokenVar chứ KO phải token
         })
         .catch((err) => {
             console.error(err)
