@@ -4,24 +4,24 @@
 
 ## FB
 ![fb](https://img.shields.io/badge/firebase-deployed-orange)
-### api
+### 1/api
 users<likes/comments>: https://firestore.googleapis.com/v1/projects/socialape-efcc4/databases/(default)/documents/users<likes/comments>
 ![api](api.png)
-### authentication
+### 2/authentication
 ![authentication](authentication.png)
-### db
+### 3/db
 ![db1](db1.png)
 *********
 ![db2](db2.png)
-### storage
+### 4/storage
 ![storage](storage.png)
-### hosting
+### 5/hosting
 ![hosting](hosting.png)
-### function
+### 6/function
 ![function1](function1.png)
 *********
 ![function2](function2.png)
-### deploy function
+### 7/about function
 #### a) create
 - `<root path>$firebase init firestore`
 - -> auto create folder "functions"
@@ -57,15 +57,16 @@ admin.initializeApp({
 1. NOT run concurrently with serve
 2. if get `access right` ERR then: https://console.cloud.google.com/functions > choose project name > check in chkbox function name > add member > allUsers & Cloud Functions Invoker > save
 ![func_invoke](func_invoke.png)
+3. deploy's API NOT stable like serve's API -> if bug then should rerun deploy
 #### f) log
 https://console.cloud.google.com/logs/ > choose project name
 ![log](log.png)
 #### ???) function: "login"
 1. Option 1:
-- `$firebase serve`
+- `functions$firebase serve`
 - => access "http://localhost:5000/socialape-efcc4/us-central1/api/login"
 - => get token for API's header
 2. Option 2:
-- `$firebase deploy --only functions`
+- `functions$firebase deploy --only functions`
 - => access "https://asia-east2-socialape-efcc4.cloudfunctions.net/api/login"
 - => get token for API's header
