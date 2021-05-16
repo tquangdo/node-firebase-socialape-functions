@@ -4,24 +4,21 @@
 
 ## FB
 ![fb](https://img.shields.io/badge/firebase-deployed-orange)
-### 1/api
-users<likes/comments>: https://firestore.googleapis.com/v1/projects/socialape-efcc4/databases/(default)/documents/users<likes/comments>
-![api](api.png)
-### 2/authentication
+### 1/authentication
 ![authentication](authentication.png)
-### 3/db
+### 2/db
 ![db1](db1.png)
 *********
 ![db2](db2.png)
-### 4/storage
+### 3/storage
 ![storage](storage.png)
-### 5/hosting
+### 4/hosting
 ![hosting](hosting.png)
-### 6/function
+### 5/function
 ![function1](function1.png)
 *********
 ![function2](function2.png)
-### 7/about function
+### 6/about function
 #### a) create
 - `<root path>$firebase init firestore`
 - -> auto create folder "functions"
@@ -73,3 +70,6 @@ https://console.cloud.google.com/logs/ > choose project name
 - `functions$firebase deploy --only functions`
 - => access "https://asia-east2-socialape-efcc4.cloudfunctions.net/api/login"
 - => get token for API's header
+#### i) function:"users<likes/comments>"
+users<likes/comments>: https://firestore.googleapis.com/v1/projects/socialape-efcc4/databases/(default)/documents/users<likes/comments>
+![api](api.png)
